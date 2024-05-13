@@ -4,15 +4,30 @@ function openPopup() {
 
     overlay.classList.add('active');
     popup.classList.add('active');
-}
 
-function closePopup(event) {
-    var overlay = document.getElementById('popupOverlay');
-    var popup = document.getElementById('loginPopup');
-    if (event.target === overlay) { // Check if click originated from the overlay
-        overlay.classList.remove('active');
-        popup.classList.remove('active');
-    }
-}
+    const form = document.querySelector("form");
 
-document.addEventListener('click', closePopup); // Add event listener for clicks on the
+    form.addEventListener("submit", function(event) {
+        event.preventDefault(); // Prevent the default form submission
+        
+        const formData = new FormData(form); // Create FormData object from the form
+        
+        // Send form data to the server using Fetch API
+        fetch('login.php', {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => response.text())
+        .then(data => {
+            alert(data); // Display response from the server
+            if (data.includes("successful")) {
+                // If login is successful, you can redirect the user to another page
+                window.location.href = "/dashboard"; // Redirect to dashboard page
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            alert('An error occurred. Please try again.');
+        });
+    });
+}

@@ -1,13 +1,17 @@
 body {
     font-family: lexend deca;
-    background-color: #f2f2f2;
+    background-color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
     overflow: hidden;
+
+ 
 }
+
+
 .login-container {
     background-color: #ffffff;
     padding: 20px;
@@ -15,6 +19,7 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     max-width: 400px;
     width: 100%;
+
 }
 .form-group {
     margin-bottom: 20px;
@@ -62,4 +67,8 @@ body {
 
 .sign-in-button:hover {
     background-color: #007f01;
+}
+
+.loginPopup {
+    width: 50%;
 }
