@@ -1,0 +1,215 @@
+:root {
+    --background-color-light: #ffffff; /* Default background color */
+    --text-color-light: #000000; /* Default text color */
+    --background-color-dark: #121212; /* Dark mode background color */
+    --text-color-dark: #ffffff; /* Dark mode text color */
+    --gradient-light: linear-gradient(to right, #d0e4cc, white); /* Light mode gradient */
+    --gradient-dark: linear-gradient(to left, #454746, #191d1b); /* Dark mode gradient */
+}
+
+.body-firsthalf {
+    background-color: var(--background-color-light);
+    color: var(--text-color-light);
+    padding-bottom: 70px;
+    padding-top: 50px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.body-half {
+    background: var(--gradient-light); /* Default gradient */
+}
+
+.passion {
+    text-align: center;
+    height: 1200px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.passion-box {
+    position: relative;
+    width: 400px;
+    height: 250px;
+    background-color: #ffffff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    font-size: 20px; /* Corrected missing unit */
+}
+
+.header-login {
+    background-color: #007f01;
+    color: antiquewhite;
+    box-shadow: 5px 5px 10px #2b2b2b;
+    cursor: pointer;
+}
+
+.header-login:hover {
+    background-color: #ffffff;
+    color: black;
+}
+
+.passion-review-box {
+    opacity: 0.8;
+    width: 500px;
+    height: 500px;
+    background-color: #ffffff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    animation: slide-in 0.5s ease both;
+}
+
+.works {
+    height: 700px;
+    text-align: center;
+    background: radial-gradient(#ffffff 70%, #dfdfdf);
+    position: relative;
+}
+
+.works-images {
+    position: absolute; /* Position the images relative to the .works container */
+    top: 35%;
+    left: 46.8%;
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
+    transition: 0.5s ease;
+}
+
+.works-images:hover {
+    box-shadow: 0 0.7px 1px rgba(0, 0, 0, 0.157),
+        0 1.7px 2.6px rgba(0, 0, 0, 0.224), 0 3.5px 5.3px rgba(0, 0, 0, 0.28),
+        0 7.3px 11px rgba(0, 0, 0, 0.346), 0 20px 30px rgba(0, 0, 0, 0.5);
+}
+
+ /** DARK MODE **/
+
+
+.dark-mode {
+    background-color: #191d1b;
+}
+
+.dark-mode .body-firsthalf {
+    background-color: #191d1b;
+    color: black;
+}
+
+.dark-mode .body-half {
+    background: var(--gradient-dark); /* Dark mode gradient */
+}
+
+.dark-mode .passion {
+    background-color: #191d1b;
+    color: #d6d6d6;
+}
+
+.dark-mode .passion-box {
+    background-color: #d6d6d6;
+    color: rgb(0, 0, 0); /* Assuming white text color in dark mode */
+}
+
+.dark-mode .header-login {
+    background-color: #191d1b; /* Adjust color for dark mode */
+    color: #d6d6d6; /* Adjust text color for dark mode */
+    box-shadow: 2px 2px 5px #131313;
+}
+
+.dark-mode .header-login:hover {
+    background-color: #d6d6d6; /* Adjust color for dark mode */
+    color: black; /* Adjust text color for dark mode */
+}
+
+.dark-mode .passion-review-box {
+    background-color: #d6d6d6; /* Adjust color for dark mode */
+    color: rgb(0, 0, 0); /* Adjust text color for dark mode */
+}
+
+.dark-mode .works {
+    background: radial-gradient(#232423, #191d1b 70%); /* Adjust gradient colors for dark mode */
+    color: white; /* Adjust text color for dark mode */
+    color: #d6d6d6;
+}
+
+.dark-mode .works-images {
+    -webkit-filter: drop-shadow(5px 5px 5px #000); /* Adjust filter for dark mode */
+    filter: drop-shadow(5px 5px 5px #000); /* Adjust filter for dark mode */
+}
+
+
+
+
+/* Style for elements with classes starting with "header-" */
+[class^="header-"] {
+    font-weight: bold;
+}
+
+/* Specific styling for header elements */
+.header-title {
+    font-size: 24px;
+}
+
+.header-description {
+    font-size: 16px;
+}
+
+  /** SWITCH **/
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 25px;
+    transform: translate(-200px, 2px);
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 4px;
+    bottom: 2.5px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #191d1b;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #191d1b;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}

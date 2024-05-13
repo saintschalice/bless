@@ -1,0 +1,70 @@
+ <div class="footer_logo">
+
+                <img src="blss-no-text.png" style="width: 150px;">
+
+                <div class="footer_logo_label" style="">
+                    <h2>BASELINE EQUITY SURVERY SERVICES INC.</h2>
+                </div>
+            </div>
+
+            <div class="footer_text">
+
+                <p>VISIT US AT 533-A HIZON ST. COR. ZAMORA, BRGY.
+                    BANGKAL, MAKATI CITY, NCR 1233</p>
+            </div>
+
+            <div class="footer_catch">
+                <h3>Your one-stop solution for data analysis.</h3>
+            </div>
+
+<div class="footer">
+            <div class="footer_header">
+                <h2>HAVE SOME QUESTIONS?</h2>
+            </div>
+
+           
+
+            <div class="footer_icons">
+                <a href="https://www.facebook.com/lenilda.talavera?mibextid=vk8aRt"><img src="facebook.png"
+                        style="width: 35px"></a>
+
+                <button class="no_bg" onclick="openForm()" style="background-color: transparent; border: none;">
+                    <img src="call.png" style="width: 35px">
+                </button>
+
+                <div class="form-popup" id="myForm">
+                    <form action="/action_page.php" class="form-container">
+                        <h3 style="text-align: center;">maritzbless@gmail.com</h3>
+                        <h3 style="text-align: center;">+639 586 4873</h3>
+                        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                    </form>
+                </div>
+
+                <button class="no_bg" onclick="openForm()" style="background-color: transparent; border: none;">
+                    <img src="email.png" style="width: 35px;">
+                </button>
+
+                <div class="form-popup" id="myForm">
+                    <form action="/action_page.php" class="form-container">
+                        <h3>maritzbless@gmail.com</h3>
+                        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                    </form>
+                </div>
+
+            </div>
+
+            <div class="footer_rights">
+                <p>Copyright © 2023 | All Rights Reserved</p>
+            </div>
+
+            <!-- <button id="open" class="footer_get-in-touch">Get In Touch</button> !-->
+
+            <!-- FORM -->
+            <div class="form-popup" id="myForm">
+                <form action="/action_page.php" class="form-container">
+                    <h1>Login</h1>
+                    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                </form>
+            </div>
+
+            <script src="socmed.js"></script>

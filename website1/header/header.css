@@ -1,0 +1,111 @@
+/**
+
+#header {
+    position: sticky;
+    top: 0;
+    z-index: 1000; 
+    transition: background-color 0.3s ease-in-out, opacity 0.3s ease-in-out; 
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); 
+    clip-path: inset(0 0 0 0); 
+}
+
+#header.blurred {
+    background-color: #273836;
+}
+
+#header.opaque {
+    opacity: 0.95;
+}
+
+**/
+
+/** content **/
+
+.header {
+    background-color: #273836;
+    height: 100px;
+    font-family: kanit;
+    margin: 0;
+}
+
+.header-logo {
+    display: flex;
+    width: 120px;
+    height: 120px;
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+.header-company-name {
+    position: relative;
+    transform: translate(150px, -115px);
+    color: white;
+    font-size: 13px;
+    letter-spacing: 3px;
+    font-family: kanit;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.header-h2 {
+    margin-top: -30px;
+}
+
+
+/** BUTTONS **/
+
+.header-buttons {
+    display: flex;
+    align-items: center;
+    transform: translate(770px, -180px);
+    letter-spacing: 3px;
+    gap: 20px;
+    color: white;
+
+}
+
+.header-buttons .header_button p {
+    cursor: pointer;
+    transition: text-shadow 0.3s ease; /* Add transition for smooth effect */
+}
+
+.header-buttons .header_button p:hover {
+    text-shadow: 0 0 5px rgba(0, 255, 0, 0.5); /* Green glowing effect */
+}
+
+/** LOGIN **/
+
+.header-login {
+    transform: translate(400px,0px);
+    padding: 1px;
+    padding-left: 3%;
+    padding-right: 3%;
+    border-radius: 10px;
+    font-size: 17px;
+    background-color: #007f01;
+    color: antiquewhite;
+    text-decoration: solid;
+    box-shadow: 5px 5px 10px #2b2b2b;
+    cursor: pointer;
+    
+    
+}
+
+.header-login-button {
+    text-decoration: none;
+    color: inherit;
+    background-color: transparent;
+    border: none;
+    letter-spacing: 2px;
+    font-family: lexend deca;
+}
+
+.header-login:hover {
+    background-color: #ffffff;
+    color: black;
+
+}
+
+/** tabs **/
+

@@ -1,0 +1,58 @@
+<head>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kanit">
+        <link href='https://fonts.googleapis.com/css?family=Lexend Deca' rel='stylesheet'>
+        <link rel="stylesheet" type="text/css" href="../header/header.css">
+        <link rel="stylesheet" type="text/css" href="../signup.css">
+
+            <title>BLESS Inc.</title>
+    
+            <div class="header" id="header" >
+                <div class="header-link" onclick="redirectToHome();" style="cursor: pointer;">
+                    <div class="header-logo">
+                        <img src="../blss-no-text.png">
+                    </div>
+                
+                    <div class="header-company-name">
+                        <h1 class="header-h1">BASELINE EQUITY</h1>
+                        <h2 class="header-h2"> SERVICES INC.</h2>
+                    </div>
+                </div>
+    
+                <div class="header-buttons">
+                    <div class="header_button">
+                        <p onclick="window.location.href='#contact-us';">CONTACT</p>
+                    </div>
+                    <div class="header_button">
+                        <p onclick="redirectToAbout();">ABOUT</p>
+                    </div>
+                    <div class="header_button">
+                        <p onclick="redirectToBook();">BOOK</p>
+                    </div>
+                    <div class="header-login">
+                        <button onclick="openPopup();" class="header-login-button">LOGIN</button>
+                    </div>
+                    <div class="header-darkmode">
+                        <label class="switch">
+                            <input type="checkbox" id="toggleBtn">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+    
+                </div>
+    
+                <div id="popupOverlay" class="popup-overlay"></div>
+                <div id="loginPopup" class="popup">
+    
+                    <iframe src="../login/login.html" class="popup-content"></iframe>
+                </div>
+    
+                <script src="../login/login.js"></script>
+                <script src="../header.js"></script>
+                <script src="../darkmode/darkmode.js"></script>
+                <link rel="stylesheet" href="../darkmode/darkmode.css" id="dark-mode">
+                <script src="header.js"></script>
+            </div>
+        </head>

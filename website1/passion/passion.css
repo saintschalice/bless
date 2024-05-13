@@ -1,0 +1,147 @@
+.passion {
+    text-align: center;
+    height: 1200px;
+    padding-top: 40px;
+    
+}
+
+@keyframes slide-in {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.passion-text {
+    font-size: 20px;
+    text-align: center;
+    width: 1000px;
+    transform: translate(400px, 0px);
+}
+
+.passion-line {
+    width: 35%;
+    height: 5px;
+    background-color: #20741c; 
+    border-radius: 5px;
+    transform: translate(600px, 20px);
+  }
+
+  .passion-boxes {
+    display: grid;
+    grid-template-columns: repeat(2, 400px);
+    gap: 150px;
+    transform: translate(200px, 150px);
+  }
+  
+  .passion-box {
+    position: relative;
+    width: 400px;
+    height: 250px;
+    background-color: #ffffff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    font-size: 20;
+  }
+
+  .passion-dot {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 10px;
+    height: 10px;
+    background-color: #20741c;
+    border-radius: 50%;
+  }
+
+  .passion-review {
+    transform: translate(1250px, -440px);
+  }
+
+  .passion-review-box {
+    opacity: 80%;
+    width: 500px;
+    height: 500px;
+    background-color: #ffffff; 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
+    border-radius: 10px; 
+    animation: slide-in 0.5s ease both;
+  }
+
+  /** REVIEW CONTAINER **/
+
+  .container {
+    position: relative;
+  }
+  
+  .textbox {
+    display: none;
+  }
+  
+  .textbox.active {
+    display: block;
+  }
+  
+  .hidden {
+    display: none;
+  }
+
+  .prev-btn,
+.next-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.prev-btn img,
+.next-btn img {
+  width: 25px; 
+}
+
+.passion-arrows {
+  position: absolute;
+  top: 50%;
+  transform: translate(50px, 170px);
+  width: 100%;
+  display: flex;
+  padding: 0 20px;
+}
+
+.passion-usericon {
+  width: 50px;
+  transform: translate(270px, -55px);
+}
+
+/** REVIEW SECTION **/
+
+.textbox,
+.textbox-hidden {
+  width: 400px;
+  text-align: justify;
+  transform: translate(50px, 40px);
+}
+
+/** DOTS **/
+
+
+.dots-passion-container{
+  transform: translate(-2000px, -250px);
+}
+
+.dots-passion1 {
+  opacity: 30%;
+}
+
+.dots-passion2 {
+  transform: translate(1550px, -600px);
+  opacity: 30%;
+  z-index: 5;
+  
+}

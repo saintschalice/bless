@@ -1,0 +1,44 @@
+.footer {
+    background-color: #273836;
+    padding-top: 40px;
+    height: 120px;
+    margin-bottom: 0;
+    padding-bottom: 0; /* Add this line */
+}
+
+.footer-icons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.footer-text {
+    text-align: center;
+    font-size: 14px; /* Added 'px' unit */
+    background-color: black;
+    color: white;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+/* Popup styles */
+
+.footer-popup-container {
+    position: relative;
+}
+
+.footer-popup {
+    display: none;
+    position: absolute;
+    transform: translate(-100px, -100px);
+    width: 200px;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+    border-radius: 7px;
+}
+
+.footer-popup-container:hover .footer-popup {
+    display: block;
+}
